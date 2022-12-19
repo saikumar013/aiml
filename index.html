@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            @import url("https://fonts.googleapis.com/css?family=Ubuntu:700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+  text-decoration: none;
+}
+
+.form {
+  width: 720px;
+  height: 600px;
+  margin: 50px auto;
+  padding: 30px 65px;
+  background: transparent;
+  
+}
+.form__box {
+  width: 100%;
+  height: 100%;
+  display:flow-root;
+  justify-content: space-around;
+  align-items: center;
+  background: #fff;
+  border-radius: 40px;
+  box-shadow: -2px 2px 24px #2a2a2a;
+  
+}
+.form__left {
+  width: 50%;
+}
+.form__padding {
+  width: 210px;
+  height: 210px;
+  background: #f2f2f2;
+  border-radius: 50%;
+  margin: 15px 180px;
+  line-height: 210px;
+  position: relative;
+}
+.form__image {
+  /* max-width: 100%; */
+  width: 94%;
+  height: 92%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius:50%;
+  object-fit: cover;
+  box-shadow: 10px 11px 30px #060606bc;
+}
+.form__right {
+  line-height: 26px;
+  width: 50%;
+}
+.form__padding-right {
+  padding: 10px 25px;
+}
+.form__title {
+  font-size: 18px;
+  font-weight: bold;
+  /* text-align: center; */
+  position: relative;
+  left: 190px;
+  margin-bottom: 30px;
+}
+.form__submit-btn {
+  background: #1fcc44;
+  cursor: pointer;
+  position:relative;
+  left:140px;
+  box-shadow: 2px 6px 30px #060606bc;
+  text-shadow: 1px 1px 2px #ffffffbc;
+  
+}
+.form__submit-btn:hover {
+  background: #ff3f70;
+}
+.form__email {
+  position: relative;
+  left:140px;
+  box-shadow: 4px 4px 10px #060606bc;
+}
+
+.form__link{
+  position: relative;
+  left:184px;
+  text-shadow: 0px 0px 1px #060606bc;
+}
+
+input {
+  display: block;
+  width: 100%;
+  margin-bottom: 25px;
+  height: 35px;
+  border-radius: 20px;
+  border: none;
+  background: #f2f2f2;
+  padding: 10px;
+  font-size: 14px;
+  position: relative;
+}
+input:after {
+  position: absolute;
+  content: "a***";
+}
+
+a {
+  color: #71df88;
+  position: relative;
+}
+a:hover {
+  color: #ff3f70;
+}
+
+        </style>
+</head>
+    
+<script type="text/javascript">
+function validate()
+{
+    var arr=["21b91a6101","21b91a6102","21b91a6103","21b91a6104","21b91a6105","21b91a6106","21b91a6107","21b91a6108","21b91a6109","21b91a6110","21b91a6111","21b91a6112","21b91a6113","21b91a6114","21b91a6115","21b91a6116","21b91a6117","21b91a6118","21b91a6119","21b91a6120","21b91a6121","21b91a6122","21b91a6123","21b91a6124","21b91a6125","21b91a6126","21b91a6127","21b91a6128","21b91a6129","21b91a6130","21b91a6131","21b91a6132","21b91a6133","21b91a6134","21b91a6135","21b91a6136","21b91a6137","21b91a6138","21b91a6139","21b91a6140","21b91a6141","21b91a6142","21b91a6143","21b91a6144","21b91a6145","21b91a6146","21b91a6147","21b91a6148","21b91a6149","21b91a6150","21b91a6151","21b91a6152","21b91a6153","21b91a6154","21b91a6155","21b91a6156","21b91a6157","21b91a6158","21b91a6159","21b91a6160","21b91a6161","21b91a6162","21b91a6163","21b91a6164","21b91a6165","21b91a6166"];
+    var flag=0;
+    for (var i=0;i<arr.length;i++)
+    {
+    if(   document.getElementById("text1").value == arr[i]
+       && document.getElementById("text2").value == arr[i] )
+    {
+       
+       flag=1;
+       
+    }
+   
+      
+}
+if (flag==1)
+{
+    window.location="home.html";
+}
+else{
+    alert('🤔Invalid Username or Password');
+}
+}
+
+
+</script>
+    
+
+    <body style="background:linear-gradient(to right, #8300cd, #b800c4);width:100vw;height:90vh">
+        <div class="form">
+            <div class="form__box">
+              <div class="form__left">
+                <div class="form__padding"><img class="form__image" src="images/john.gif"/></div>
+              </div>
+              <div class="form__right">
+                <div class="form__padding-right">
+                  <form>
+                    <h1 class="form__title">Member Login</h1>
+                    <input class="form__email" type="text" placeholder="Username" id="text1"/>
+                    <input class="form__email" type="password" placeholder="********" id="text2"/>
+                    <input class="form__submit-btn" type="button" value="Login"  onclick="javascript:validate()"/>
+                  </form>
+                  <p> <a class="form__link" href="regform.html">Create your account</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </body>
+</html>

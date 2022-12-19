@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            @import url("https://fonts.googleapis.com/css?family=Ubuntu:700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+  font-family: "Ubuntu", sans-serif;
+  text-decoration: none;
+  
+}
+
+
+
+body{
+  background:linear-gradient(to right, #8300cd, #b800c4);
+  width:50%;
+  height:50% ;
+
+  
+ 
+}
+
+.form {
+  width: 800px;            /* scale of the white box */
+  height: 1150px;
+  margin: 45px 45%;
+  padding: 30px 60px;
+  background: transparent;    
+  
+}
+.form__box {
+  width: 100%;
+  height: 100%;
+  display:flow-root;
+  justify-content:space-around;
+  align-items: center;
+  background: #fff;
+  border-radius: 40px;
+  box-shadow: -2px 2px 24px #2a2a2a;
+  
+}
+
+/* .form__left { 
+  width: 50%;
+} */
+.form__padding {
+  width: 210px;
+  height: 210px;
+  background: #f2f2f2;
+  border-radius: 50%;
+  margin: 15px 180px;
+  line-height: 210px;
+  position: relative;
+  left:50px; 
+                /*image along with back circle position*/
+}
+.form__image {
+  /* max-width: 100%; */
+  width: 94%;
+  height: 92%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius:50%;
+  object-fit: cover;
+  box-shadow: 10px 11px 30px #060606bc;
+}
+/* .form__right { 
+  line-height: 26px;
+  width: 50%;
+} */
+
+
+/* .form__padding-right { 
+  padding: 10px 25px;
+}  */
+.form__title {
+  font-size: 18px;
+  font-weight: bold;
+  /* text-align: center; */
+  position: relative;
+  left: 270px;
+  margin-bottom: 30px;
+}
+.form__submit-btn {
+  background: #1fcc44;
+  cursor: pointer;
+  position:relative;
+   left:85%; 
+   top:-48.2em; 
+  width: 25%;
+  box-shadow: 2px 6px 30px #060606bc;
+  text-shadow: 1px 1px 2px #ffffffbc;
+  
+}
+.form__submit-btn:hover {
+  background: #ff3f70;
+}
+.form__email {
+  position: relative;
+  left:140px;
+  width:60%;
+  box-shadow: 4px 4px 10px #060606bc;
+}
+.form__emailb{
+  position: relative;
+  left:140px;
+  box-shadow: 4px 4px 10px #060606bc;
+  display: inline-block;
+}
+
+.form__link{
+  position: relative;
+  left:184px;
+  text-shadow: 0px 0px 1px #060606bc;
+}
+
+input {
+  display: block;
+  width: 100%;
+  margin-bottom: 25px;
+  height: 35px;
+  border-radius: 20px;
+  border: none;
+  background: #f2f2f2;
+  padding: 10px;
+  font-size: 14px;
+  position: relative;
+}
+input:after {
+  position: absolute;
+  /* content: "a***"; */
+}
+
+a {
+  color: #71df88;
+  position: relative;
+}
+a:hover {
+  color: #ff3f70;
+}
+.rad{
+  display: inline-block;
+}
+.radio_btn1{
+        position: relative;
+        left:86%; 
+         top:-41.8em; 
+        width:20px;
+        height:20px;
+        cursor: pointer;
+        
+}
+.radio_btn2{
+        position: relative;
+        left:102%; 
+        top:-46.3em;
+        width:20px;
+        height:20px;
+        cursor: pointer;
+}
+
+.male{
+       position:relative;
+       left:90%;
+       top:-39.4em;
+}
+
+.female{
+       position:relative;
+       left:100%;
+       margin-left:45px;
+       top:-43.4em;
+}
+.gender{
+   position:relative;
+   bottom:-14px; 
+   margin-left: 21%;
+   
+}
+.dob_txt{
+
+  position: relative;
+  left:71.5%;
+  top:-41.8em;
+}
+.dob{
+  position: relative;
+  left:70.5%;
+  top:-47.3em;
+  width:54.6%;
+  box-shadow: 4px 4px 10px #060606bc;
+}
+.mail_txt{
+  position: relative;
+  left:71.5%;
+  top:-40.8em;
+ 
+}
+.mail{
+ 
+  position: relative;
+  left:70.5%;
+  top: -46.2em;
+  width:54.6%;
+  box-shadow: 4px 4px 10px #060606bc;
+}
+
+.mobile_txt{
+  position: relative;
+  left:71.5%;
+  top:-40.8em;
+
+}
+.mobile{
+  position: relative;
+  left:70.5%;
+  top: -46.2em;;
+  width:54.6%;
+  box-shadow: 4px 4px 10px #060606bc;
+}
+
+.photo_txt{
+  position: relative;
+  left:71.5%;
+  top:-40.8em;
+}
+.photo{
+  position: relative;
+  left:70.5%;
+  top:-46.2em;
+  width:54.6%;
+  box-shadow: 4px 4px 10px #060606bc;
+}
+.pos{
+  position: relative;
+  top:-168%;
+  left:25%;
+}
+.npos{
+  margin-left: 21%;
+  margin-top: 5%;
+  padding-bottom:5px;
+}
+
+ </style>
+</head>
+    
+<script type="text/javascript">
+function validate()
+{
+    
+    window.location="test.html";
+
+}
+
+
+
+</script>
+     <body >
+        <div class="form">
+            <div class="form__box">
+              <!-- <div class="form__left"> -->
+                <div class="form__padding"><img class="form__image" src="images/character.gif"/></div>
+              <!-- </div> -->
+              <!-- <div class="form__right"> -->
+                <!-- <div class="form__padding-right"> -->
+                  <form action="test.html">
+                <h1 class="form__title">Registration Form</h1>
+                 
+                <p class="npos">Student Name</p>
+                    <input class="form__email" type="text" placeholder="Student Name" id="text1" required/>
+                    <p class="npos">Father Name</p>
+                    <input class="form__email" type="text" placeholder="Father Name" id="text2"/>
+                    <p class="npos">Mother Name</p>
+                    <input class="form__email" type="text" placeholder="Mother Name" id="text3"/>
+                    <div class="gender">Gender</div>
+                  
+                </div>
+                </div>
+                  
+                <input type="radio" id="gender" name="gender" class="radio_btn1" value="Male"><div class="male">Male</div>
+                <input type="radio" id="gender" name="gender" class="radio_btn2" value="Female"><div class="female">Female</div>
+                
+                <!-- <div class="pos"> -->
+                <label class="dob_txt">Date of Birth</label>
+                <input type="date" id="dob" name="dob" class="dob" required>
+
+                <label class="mail_txt">Email</label>    
+                <input type="email" id="email" name="email" class="mail" placeholder="email@xyz.com" required>
+
+                <label class="mobile_txt">Mobile</label>
+                <input type="tel" class="mobile" placeholder="XXX XXX XXXX" required>
+
+                <Label class="photo_txt">Student Photo</Label>
+                <input type="file" name="studentimage" class="photo" id="studentimage" required><br><br><br>
+                
+                    <!-- <input class="form__submit-btn" type="button" value="Register"  onclick="javascript:validate()"/>  -->
+                    <input class="form__submit-btn" type="submit" value="Register">
+             <!-- </div>  -->
+            
+                  </form>
+                  <!-- <p> <a class="form__link" href="signupform.html">Create your account</a></p> -->
+               
+             
+    </body>
+</html>
